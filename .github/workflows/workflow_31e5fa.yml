@@ -1,0 +1,12 @@
+name: Continuous Integration
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  process-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare workspace
+        run: echo "complete"
